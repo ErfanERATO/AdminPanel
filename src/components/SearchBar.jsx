@@ -4,7 +4,7 @@ import { IoLanguageOutline } from "react-icons/io5";
 import { BsSun } from "react-icons/bs";
 import { AiOutlineAppstoreAdd } from "react-icons/ai";
 import { BiBell } from "react-icons/bi";
-import profile from "../assets/avatar-1.129659bb.png"
+import profile from "../assets/avatar-1.129659bb.png";
 
 const SearcheBar = () => {
   return (
