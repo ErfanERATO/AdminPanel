@@ -1,0 +1,62 @@
+.main-app {
+  background-color: #24293c;
+  .row-div {
+    width: 100%;
+    .content-col {
+      background-color: transparent;
+    }
+  }
+  .content-div {
+    background-color: transparent;
+    color: white;
+    .search-bar {
+      background-color: #2e3349;
+      margin-top: 20px;
+      border-radius: 5px;
+      height: 65px;
+      .search-bar-row-holder {
+        margin-top: 17px;
+        .avatar-row-holder {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-right: 10px;
+          .avatar-image {
+            display: flex;
+            margin-left: 10px;
+          }
+
+          .avatar {
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .icons{
+            margin-left: 13px;
+          }
+        }
+        .search-bar-search-row-holder {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin-left: 10px;
+          .search-color {
+            color: #6d7286;
+            font-weight: 500;
+            margin-left: 5px;
+          }
+          .search-color-k{
+            border: 1px solid #6d7286;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-div {
+    background-color: #2e3349;
+    color: white;
+    height: 100vh;
+  }
+}
