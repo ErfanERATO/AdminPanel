@@ -8,7 +8,7 @@ import PanelLayout from "./layouts/PanelLayout";
 function App() {
   return (
     <PanelLayout>
-      asdasdas
+      
     </PanelLayout>
   );
 }

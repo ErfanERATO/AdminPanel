@@ -1,6 +1,7 @@
 import React from "react";
 import { TbShoppingCart } from "react-icons/tb";
 import { BsLink45Deg } from "react-icons/bs";
+import { MdOutlinePayment } from "react-icons/md";
 import ProgressBar from "../components/ProgressBar";
 import Object from "../assets/sidebar-pic-1.png";
 
@@ -8,7 +9,7 @@ const WebAnalytics = () => {
   return (
     <div className="web-analytic">
       <div className="row web-analytic-main-row">
-        <div className="col-6">
+        <div className="col-md-6">
           <div className="slider-div-holder">
             <div className="row">
               <div className="col-8 text-side-object-col-holder">
@@ -53,31 +54,41 @@ const WebAnalytics = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-4 text-side-object">
-                <div className="object-image">
-                  <img src={Object} className="main-object-image" />
+              <div className="col-4">
+                <div className="text-side-object">
+                  <div className="object-image">
+                    <img src={Object} className="main-object-image" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="col-6">
+        <div className="col-md-6">
           <div className="row">
-            <div className="col-6">
+            <div className="col-md-6">
               <div className="first-card-side-slider">
                 <div className="container first-card-container">
-                  <div className="first-card-line row">
-                    <div className="col-6 first-section-of-line-one">
-                      Sales Overview
-                    </div>
-                    <div className="col-6">
-                      <div className="second-section-of-line-one">+18.2%</div>
+                  <div className="first-card-line">
+                    <div className="row">
+                      <div className="col-sm-6 col-md-6">
+                        <div className="first-section-of-line-one">
+                          Sales Overview
+                        </div>
+                      </div>
+                      <div className="col-sm-6 col-md-6">
+                        <div className="second-section-of-line-one">+18.2%</div>
+                      </div>
                     </div>
                   </div>
-                  <div className="row "><div className="col-12"><div className="card-price">$42.5k</div></div></div>
+                  <div className="row ">
+                    <div className="col-sm-12 col-md-12">
+                      <div className="card-price">$42.5k</div>
+                    </div>
+                  </div>
                   <div className="row">
-                    <div className="col-5 order-section">
+                    <div className="col-sm-5 col-md-5 order-section">
                       <div className="order-icon">
                         <div className="shopping-icon">
                           <TbShoppingCart
@@ -92,9 +103,13 @@ const WebAnalytics = () => {
                       <div className="number-2">6,440</div>
                     </div>
 
-                    <div className="col-2 vs-betwwen">Vs</div>
+                    <div className="col-2 col-md-2">
+                      <div className="vs-holder">
+                        <div className="vs-betwwen">Vs</div>
+                      </div>
+                    </div>
 
-                    <div className="col-5 visit-section">
+                    <div className="col-sm-5 col-md-5 visit-section">
                       <div className="visit-icon">
                         <div className="visit-text">Visits</div>
                         <div className="link-icon">
@@ -110,18 +125,43 @@ const WebAnalytics = () => {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="progrss-bar-div">
                     <ProgressBar done="70" />
                   </div>
-                  
                 </div>
               </div>
             </div>
 
-            <div className="col-6">
-              <div className="second-card-side-slider">x2</div>
-            </div>
+            <div className="col-md-6">
+              <div className="second-main-card-side-slider">
+                <div className="container second-card-side-slider">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="pay-icon-holder">
+                        <div className="pay-icon">
+                          <MdOutlinePayment
+                            size="25px"
+                            color="#2db573"
+                            className="main-pay-icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row ">
+                    <div className="col-sm-12 col-md-12">
+                      <div className="mount-view">97.5K</div>
+                    </div>
+                  </div>
 
+                  <div className="row ">
+                    <div className="col-sm-12 col-md-12">
+                      <div className="Revenue-text">Revenue Generated</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

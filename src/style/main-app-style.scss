@@ -10,7 +10,8 @@
     background-color: transparent;
     color: white;
     .search-bar {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
       background-color: #2e3349;
       margin-top: 20px;
       border-radius: 5px;
@@ -34,7 +35,7 @@
             border-radius: 50%;
             margin-left: 10px;
           }
-          .icons{
+          .icons {
             margin-left: 18px;
           }
         }
@@ -48,7 +49,7 @@
             font-weight: 500;
             margin-left: 5px;
           }
-          .search-color-k{
+          .search-color-k {
             border: 1px solid #6d7286;
           }
         }
@@ -60,5 +61,172 @@
     background-color: #2e3349;
     color: white;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .logo-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-top: 15px;
+      padding-left: 10px;
+      .main-logo {
+        width: 45px;
+        height: 45px;
+      }
+      .company-name {
+        color: #c9cdd9;
+        font-weight: bold;
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        padding-left: 7px;
+      }
+    }
+    .dashboard-button {
+      display: flex;
+      flex-direction: row;
+      color: #a8adc0;
+      margin-top: 20px;
+      padding: 7px;
+      background-color: #3b4054;
+      border-radius: 5px;
+      .dashboard-text {
+        padding-left: 7px;
+        font-weight: 500;
+        color: #a8adc0;
+      }
+      .dashboard-arrow {
+        display: flex;
+        justify-content: center;
+        padding-left: 60px;
+        font-weight: 500;
+        color: #c9cdd9;
+      }
+    }
+
+    .app-pages{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      color: #6d7286;
+      font-weight: 500;
+      font-size: 12px;
+      padding-top: 20px;
+    }
+
+    .email-button {
+      display: flex;
+      flex-direction: row;
+      color: #a8adc0;
+      margin-top: 10px;
+      padding: 7px;
+      border-radius: 5px;
+      .email-text {
+        padding-left: 7px;
+        font-weight: 500;
+        color: #a8adc0;
+        padding-top: 2px;
+      }
+    }
+
+    .chat-button {
+      display: flex;
+      flex-direction: row;
+      color: #a8adc0;
+      margin-top: 10px;
+      padding: 7px;
+      border-radius: 5px;
+      .chat-text {
+        padding-left: 7px;
+        font-weight: 500;
+        color: #a8adc0;
+        padding-top: 2px;
+      }
+    }
+
+    .calender-button {
+      display: flex;
+      flex-direction: row;
+      color: #a8adc0;
+      margin-top: 10px;
+      padding: 7px;
+      border-radius: 5px;
+      .calender-text {
+        padding-left: 7px;
+        font-weight: 500;
+        color: #a8adc0;
+        padding-top: 2px;
+      }
+    }
+
+    .invoice-button {
+      display: flex;
+      flex-direction: row;
+      color: #a8adc0;
+      margin-top: 10px;
+      padding: 7px;
+      border-radius: 5px;
+      .invoice-text {
+        padding-left: 7px;
+        font-weight: 500;
+        color: #a8adc0;
+        padding-top: 2px;
+      }
+      .invoice-arrow {
+        display: flex;
+        justify-content: center;
+        padding-left: 100px;
+        font-weight: 500;
+        padding-top: 2px;
+        color: #a8adc0;
+      }
+    }
+
+
+    .user-button {
+      display: flex;
+      flex-direction: row;
+      color: #a8adc0;
+      margin-top: 10px;
+      padding: 7px;
+      border-radius: 5px;
+      .user-text {
+        padding-left: 7px;
+        font-weight: 500;
+        color: #a8adc0;
+        padding-top: 2px;
+      }
+      .user-arrow {
+        display: flex;
+        justify-content: center;
+        padding-left: 120px;
+        font-weight: 500;
+        padding-top: 2px;
+        color: #a8adc0;
+      }
+    }
+
+    .pages-button {
+      display: flex;
+      flex-direction: row;
+      color: #a8adc0;
+      margin-top: 10px;
+      padding: 7px;
+      border-radius: 5px;
+      .pages-text {
+        padding-left: 7px;
+        font-weight: 500;
+        color: #a8adc0;
+        padding-top: 2px;
+      }
+      .pages-arrow {
+        display: flex;
+        justify-content: center;
+        padding-left: 110px;
+        font-weight: 500;
+        padding-top: 2px;
+        color: #a8adc0;
+      }
+    }
   }
 }
