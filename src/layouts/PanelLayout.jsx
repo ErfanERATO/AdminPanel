@@ -3,6 +3,7 @@ import SearcheBar from "../components/SearchBar";
 import Analytics from "../router/Analytics";
 import { Route, Routes } from "react-router-dom";
 import SideBar from "../components/SideBar";
+import EmailPage from "../router/EmailPage";
 
 
 const PanelLayout = () => {
@@ -21,6 +22,7 @@ const PanelLayout = () => {
             <SearcheBar />
             <Routes>
               <Route path="/" element={<Analytics />} />
+              <Route path="/email" element={<EmailPage />} />
             </Routes>
           </div>
         </div>
