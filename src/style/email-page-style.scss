@@ -8,9 +8,9 @@
     display: flex;
     flex-direction: column;
     height: max-content;
-
     .email-side-bar {
       background-color: #2e3349;
+      border-right: 1px solid #474c62;
       .sidebar-holder {
         display: flex;
         flex-direction: column;
@@ -36,7 +36,7 @@
           padding: 7px;
           border-radius: 5px;
           .inbox-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -51,7 +51,7 @@
           padding: 7px;
           border-radius: 5px;
           .sent-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -66,7 +66,7 @@
           padding: 7px;
           border-radius: 5px;
           .draft-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -81,7 +81,7 @@
           padding: 7px;
           border-radius: 5px;
           .starred-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -96,7 +96,7 @@
           padding: 7px;
           border-radius: 5px;
           .spam-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -111,7 +111,7 @@
           padding: 7px;
           border-radius: 5px;
           .trash-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -146,7 +146,7 @@
             }
           }
           .label-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -170,7 +170,7 @@
             }
           }
           .label-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -194,7 +194,7 @@
             }
           }
           .label-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -218,7 +218,7 @@
             }
           }
           .label-text {
-            padding-left: 7px;
+            padding-left: 10px;
             font-weight: 500;
             color: #a8adc0;
             padding-top: 2px;
@@ -227,7 +227,90 @@
       }
     }
     .email-content {
+      padding-top: 20px;
       background-color: #2e3349;
+      display: flex;
+      flex-direction: column;
+
+      .search-icon-holder {
+        display: flex;
+        flex-direction: row;
+        .search-text {
+          color: #6d7286;
+          font-weight: 500;
+          padding-left: 7px;
+          background-color: transparent;
+          border: none;
+          outline: none;
+        }
+      }
+
+      .refresh-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 20px;
+        .main-refresh-icon {
+          margin-right: 10px;
+        }
+      }
+
+      .first-row-holder {
+        padding-top: 20px;
+        .check-box {
+          display: flex;
+          flex-direction: row;
+          padding-left: 3px;
+          .star-holder {
+            padding-left: 15px;
+            margin-top: -5px;
+          }
+          .avatar-image {
+            display: flex;
+            margin-top: -4px;
+            padding-left: 15px;
+          }
+
+          .avatar {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+
+          .email-title {
+            color: #5a5f75;
+            font-weight: bold;
+            padding-left: 15px;
+          }
+          .main-check-box {
+            background-color: transparent;
+            border: 2px solid #5a5f75;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+          }
+        }
+
+        .date-importance {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          padding-right: 20px;
+          color: #6d7286;
+          font-weight: 600;
+          .importance {
+            padding-right: 15px;
+            .label-importance {
+              height: 10px;
+              width: 10px;
+              background-color: #ee465d;
+              border-radius: 50%;
+              display: inline-block;
+            }
+          }
+        }
+      }
     }
   }
 }
