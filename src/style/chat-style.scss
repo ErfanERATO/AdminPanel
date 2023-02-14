@@ -75,13 +75,12 @@
 .background-chat-page {
   background-color: transparent;
   padding-top: 20px;
-  height: fit-content;
   .main-chat-page {
+    display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    background-color: #2e3349;
+    // background-color: #2e3349;
     display: flex;
     flex-direction: column;
-    height: max-content;
     border-radius: 5px;
     height: 480px;
     .chat-side-bar {
@@ -190,7 +189,6 @@
 
       .chat-content {
         padding-top: 20px;
-        background-color: #353a50;
         margin-left: 280px;
         height: 513px;
         display: flex;
@@ -201,7 +199,6 @@
         align-content: center;
         .no-message{
           .no-message-icon{
-            background-color: red;
             width: 50px;
             width: 50px;
             border-radius: 100px;
