@@ -9,6 +9,8 @@
   .content-div {
     background-color: transparent;
     color: white;
+    margin-left: 260px;
+    height: 100vh;
     .search-bar {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
         0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -104,7 +106,7 @@
       }
     }
 
-    .app-pages{
+    .app-pages {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -182,7 +184,6 @@
       }
     }
 
-
     .user-button {
       display: flex;
       flex-direction: row;
@@ -229,4 +230,9 @@
       }
     }
   }
+}
+.sidebar {
+  position: fixed;
+  width: 260px;
+  left: 0;
 }

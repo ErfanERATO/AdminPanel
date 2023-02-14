@@ -145,16 +145,11 @@ const EmailForms = () => {
 
           <div className="col-9 col-sm-9 col-md-9">
             <div className="email-content">
-              <div className="xxxxxx">
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="search-icon-holder">
-                      <AiOutlineSearch size="27px" color="#6d7286" />
-                      <input
-                        className="search-text"
-                        placeholder="Search email"
-                      />
-                    </div>
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="search-icon-holder">
+                    <AiOutlineSearch size="27px" color="#6d7286" />
+                    <input className="search-text" placeholder="Search email" />
                   </div>
                 </div>
               </div>
