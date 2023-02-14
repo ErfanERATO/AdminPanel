@@ -9,6 +9,7 @@ import { AiOutlineUser } from "react-icons/ai";
 
 const SideBar = () => {
   return (
+    
     <div className="sidebar">
       <div className="container sidebar-div">
         <div className="logo-holder">
@@ -61,14 +62,6 @@ const SideBar = () => {
           </div>
           <div className="user-text">User</div>
           <div className="user-arrow"> {">"} </div>
-        </div>
-
-        <div className="pages-button">
-          <div className="pages-icon">
-            <AiOutlineFile size="20px" color="#c9cdd9" />
-          </div>
-          <div className="pages-text">Pages</div>
-          <div className="pages-arrow"> {">"} </div>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const PanelLayout = () => {
     <div className="App main-app">
       <SideBar />
       <div className="content-div">
-        <div className="container col-12 ">
+        <div className="container col-md-12 ">
           <SearcheBar />
           <Routes>
             <Route path="/" element={<Analytics />} />

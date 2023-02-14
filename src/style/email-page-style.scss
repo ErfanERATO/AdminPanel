@@ -11,6 +11,8 @@
     .email-side-bar {
       background-color: #2e3349;
       border-right: 1px solid #474c62;
+      position: fixed;
+      width: 260px;
       .sidebar-holder {
         display: flex;
         flex-direction: column;
@@ -205,7 +207,6 @@
           display: flex;
           flex-direction: row;
           color: #a8adc0;
-          //   padding: 10px;
           padding: 1px 10px 10px 10px;
           border-radius: 5px;
           .private-icon {
@@ -229,6 +230,8 @@
     .email-content {
       padding-top: 20px;
       background-color: #2e3349;
+      margin-left: 280px;
+      height: 513px;
       display: flex;
       flex-direction: column;
 
@@ -245,44 +248,43 @@
         }
       }
 
-      .refresh-icon {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding-right: 20px;
-        .main-refresh-icon {
-          margin-right: 10px;
+      .refresh-three-dot {
+        margin-top: -20px;
+        .refresh-icon {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          padding-right: 20px;
+          .main-refresh-icon {
+            margin-right: 10px;
+          }
         }
       }
 
       .first-row-holder {
-        padding-top: 20px;
+        padding-top: 25px;
         .check-box {
           display: flex;
           flex-direction: row;
           padding-left: 3px;
-          .star-holder {
-            padding-left: 15px;
-            margin-top: -5px;
+          .main-check-box {
+            background-color: transparent;
+            border: 2px solid #5a5f75;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
           }
-          .avatar-image {
-            display: flex;
-            margin-top: -4px;
-            padding-left: 15px;
-          }
+        }
+      }
 
-          .avatar {
-            vertical-align: middle;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-
-          .email-title {
-            color: #5a5f75;
-            font-weight: bold;
-            padding-left: 15px;
-          }
+      .email-row-holder {
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        .check-box {
+          display: flex;
+          flex-direction: row;
+          padding-left: 3px;
           .main-check-box {
             background-color: transparent;
             border: 2px solid #5a5f75;
@@ -292,15 +294,38 @@
           }
         }
 
+        .star-holder {
+          margin-top: -5px;
+          padding-left: 15px;
+        }
+
+        .avatar-image {
+          display: flex;
+          margin-left: 10px;
+          margin-top: -5px;
+          .avatar {
+            vertical-align: middle;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            margin-left: 10px;
+          }
+        }
+
+        .email-title {
+          color: #5a5f75;
+          font-weight: bold;
+          padding-left: 15px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
         .date-importance {
           display: flex;
           flex-direction: row;
-          justify-content: flex-end;
-          padding-right: 20px;
-          color: #6d7286;
-          font-weight: 600;
-          .importance {
-            padding-right: 15px;
+
+          .importance-icon {
             .label-importance {
               height: 10px;
               width: 10px;
@@ -308,6 +333,11 @@
               border-radius: 50%;
               display: inline-block;
             }
+          }
+          .date {
+            color: #5a5f75;
+            font-weight: bold;
+            padding-left: 10px;
           }
         }
       }
