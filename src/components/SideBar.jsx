@@ -6,6 +6,7 @@ import { MdOutlineChat } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { AiOutlineFile } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
+import "../style/responsive/responsive.scss"
 
 const SideBar = () => {
   return (

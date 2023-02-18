@@ -1,0 +1,170 @@
+.invoice-page {
+  background-color: #2e3349;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 20px;
+  white-space: nowrap;
+  .table-header {
+    .filter-header {
+      display: flex;
+      gap: 20px;
+      input {
+        background-color: transparent;
+        border: 1px solid #5c6177;
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 10px;
+      }
+    }
+  }
+  .table-header,
+  .operation-header,
+  .new-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .operation-header {
+    gap: 15px;
+    .limit-table {
+      label {
+        margin-right: 10px;
+        font-weight: 600;
+      }
+      select {
+        white-space: nowrap;
+        height: 40px;
+        width: 65px;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #5c6177;
+      }
+    }
+    .new-table {
+      button {
+        white-space: nowrap;
+        background-color: #7367f1;
+        border: none;
+        padding: 8px 25px;
+        border-radius: 5px;
+        span {
+          color: white;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .table-invoice {
+    display: flex;
+    flex-direction: column;
+    .table-information {
+      white-space: nowrap;
+      justify-content: space-between;
+      padding-right: 40px;
+      padding-top: 35px;
+      display: flex;
+      gap: 90px;
+      .first-section {
+        display: flex;
+        gap: 60px;
+        .id-info {
+          padding-right: 50px;
+        }
+      }
+      .second-section {
+        display: flex;
+        gap: 60px;
+        .balance-info {
+          padding-left: 60px;
+        }
+      }
+    }
+
+    .table-user-invoice {
+      display: flex;
+      flex-direction: row;
+      padding-top: 35px;
+      justify-content: space-between;
+      .sec-one {
+        display: flex;
+        .invoice-id {
+          font-weight: 400;
+          color: #7367f1;
+        }
+        .invoice-user {
+          display: flex;
+          flex-direction: row;
+          .invoice-user-avatar {
+            .content-avatar {
+              padding-left: 88px;
+              margin-top: -15px;
+              .avatar-image {
+                display: flex;
+                padding-top: 10px;
+                .avatar {
+                  vertical-align: middle;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+          .invoice-user-info {
+            padding-left: 10px;
+            margin-top: -15px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .invoice-user-name {
+              color: #d1d4e7;
+              font-weight: 600;
+              font-size: 20px;
+            }
+            .invoice-user-email {
+              color: #717388;
+            }
+          }
+        }
+      }
+
+      .sec-two {
+        display: flex;
+        padding-right: 10px;
+        gap: 50px;
+        .invoice-total,
+        .invoice-date,
+        .invoice-balance {
+          color: #d1d4e7;
+          font-weight: 500;
+          font-size: 17px;
+          white-space: nowrap;
+        }
+
+        .invoice-balance {
+          padding-right: 25px;
+        }
+        .invoice-date{
+          padding-right: 80px;
+        }
+        .invoice-total{
+          padding-right: 15px;
+        }
+
+
+        .invoice-actions {
+          white-space: nowrap;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

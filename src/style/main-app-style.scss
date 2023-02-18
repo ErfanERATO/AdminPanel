@@ -46,10 +46,19 @@
           flex-direction: row;
           justify-content: flex-start;
           margin-left: 10px;
-          .search-color {
-            color: #6d7286;
-            font-weight: 500;
-            margin-left: 5px;
+          .search {
+            .search-icon-holder {
+              display: flex;
+              flex-direction: row;
+              .search-text {
+                color: #6d7286;
+                font-weight: 500;
+                padding-left: 7px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+              }
+            }
           }
           .search-color-k {
             border: 1px solid #6d7286;
