@@ -6,11 +6,10 @@ import { MdOutlineChat } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { AiOutlineFile } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
-import "../style/responsive/responsive.scss"
+import "../style/responsive/responsive.scss";
 
 const SideBar = () => {
   return (
-    
     <div className="sidebar">
       <div className="container sidebar-div">
         <div className="logo-holder">
@@ -34,7 +33,7 @@ const SideBar = () => {
           </div>
           <div className="email-text">Email</div>
         </div>
-
+ 
         <div className="chat-button">
           <div className="chat-icon">
             <MdOutlineChat size="20px" color="#c9cdd9" />

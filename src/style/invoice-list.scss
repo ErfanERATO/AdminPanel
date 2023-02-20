@@ -96,7 +96,37 @@
         .invoice-id {
           font-weight: 400;
           color: #7367f1;
+          position: relative;
+          
         }
+
+        .invoice-id::before {
+          --translate_y: calc(-100% - 40px);
+          position: absolute;
+          content: attr(tooltip);
+          width: max-content;
+          background-color: #212121;
+          transform-origin: bottom center;
+          color: white;
+          border-radius: 5px;
+          width: max-content;
+          height: max-content;
+          font-size: 15px;
+        }
+
+        .invoice-id::before,
+        .invoice-id::after {
+          --scale: 0;
+          left: 50%;
+          transform: translate(-50%, var(--translate_y)) scale(var(--scale));
+          transition: 0.2s transform;
+        }
+
+        .invoice-id:hover::before,
+        .invoice-id:hover::after {
+          --scale: 1;
+        }
+
         .invoice-user {
           display: flex;
           flex-direction: row;
@@ -143,20 +173,19 @@
         .invoice-balance {
           color: #d1d4e7;
           font-weight: 500;
-          font-size: 17px;
+          font-size: 15px;
           white-space: nowrap;
         }
 
         .invoice-balance {
           padding-right: 25px;
         }
-        .invoice-date{
-          padding-right: 80px;
+        .invoice-date {
+          padding-right: 90px;
         }
-        .invoice-total{
-          padding-right: 15px;
+        .invoice-total {
+          padding-right: 23px;
         }
-
 
         .invoice-actions {
           white-space: nowrap;
