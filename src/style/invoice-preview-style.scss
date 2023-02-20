@@ -1,0 +1,57 @@
+.invoice-preview {
+  //   background-color: #2e3349;
+  background-color: transparent;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  .invoice-form,
+  .invoice-operation {
+    padding-top: 20px;
+    background-color: #2e3349;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    padding-bottom: 20px;
+  }
+
+  .invoice-form {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .invoice-operation {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invoice-operation {
+    align-items: center;
+    .send,.add {
+      background-color: #7367f1;
+      border: none;
+      border-radius: 5px;
+      width: 220px;
+      height: 33px;
+      color: white;
+      font-weight: 600;
+    }
+    .download,.print,.edit {
+      background-color: #3c4154;
+      border: none;
+      border-radius: 5px;
+      width: 220px;
+      height: 33px;
+      color: #9ea2ae;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .add {
+      margin-top: 10px;
+    }
+  }
+}

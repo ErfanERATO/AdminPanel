@@ -101,7 +101,7 @@
         }
 
         .invoice-id::before {
-          --translate_y: calc(-100% - 40px);
+          --translate_y: calc(-100% - 5px);
           position: absolute;
           content: attr(tooltip);
           width: max-content;
@@ -109,9 +109,11 @@
           transform-origin: bottom center;
           color: white;
           border-radius: 5px;
+          display: flex;
+          padding-left: 5px;
           width: max-content;
           height: max-content;
-          font-size: 15px;
+          font-size: 12px;
         }
 
         .invoice-id::before,

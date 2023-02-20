@@ -73,8 +73,8 @@ const InoviceList = () => {
             <div className="invoice-user">
               <div className="invoice-user-avatar">
                 <div className="content-avatar">
-                  <div class="avatar-image ">
-                    <img src={profile2} class="avatar" />
+                  <div class="avatar-image">
+                    <img src={profile2} class="avatar"/>
                   </div>
                 </div>
               </div>

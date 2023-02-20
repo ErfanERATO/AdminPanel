@@ -6,6 +6,7 @@ import SideBar from "../components/SideBar";
 import EmailPage from "../router/EmailPage";
 import ChatPage from "../router/ChatPage";
 import InvoiceListPage from "../router/InvoiceListPage";
+import InvoicePreviewPage from "../router/InvoicePreviewPage";
 import "../style/responsive/responsive.scss"
 // import Items from "../pages/Items";
 
@@ -21,6 +22,7 @@ const PanelLayout = () => {
             <Route path="/email" element={<EmailPage />} />
             <Route path="/chat" element={<ChatPage />} />
             <Route path="/invoiceList" element={<InvoiceListPage />} />
+            <Route path="/invoicePreview" element={<InvoicePreviewPage />}/>
             {/* <Route path="/items" element={<Items />} /> */}
           </Routes>
         </div>
