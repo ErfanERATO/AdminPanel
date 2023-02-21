@@ -5,6 +5,7 @@
   flex-direction: row;
   gap: 20px;
   justify-content: space-between;
+  padding-bottom: 50px;
   .invoice-form,
   .invoice-operation {
     padding-top: 20px;
@@ -130,9 +131,10 @@
       }
     }
     .table {
-      border-bottom: 1px solid #50566e;
+      // border-bottom: 1px solid #50566e;
       color: #c9cfdf;
       text-align: left;
+      border: none;
     }
 
     .resualt {
