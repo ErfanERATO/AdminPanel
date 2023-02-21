@@ -8,7 +8,6 @@ const InvoicePreview = () => {
     <div className="invoice-preview">
       <div className="invoice-form container">
         <div className="invoice-form-header">
-
           <div className="address">
             <div className="logo-holder">
               <img src={Logo} className="main-logo" />
@@ -36,8 +35,50 @@ const InvoicePreview = () => {
             </div>
           </div>
         </div>
-        <hr/>
-        <div className="invoice-form-information">information</div>
+
+        <hr />
+
+        <div className="invoice-form-information">
+          <div className="invoice-to">
+            <h6>Invoice To:</h6>
+            <div>
+              <p>Andrew Burns</p>
+              <p>Richardson and Sons LLC</p>
+              <p>78083 Laura Pines, Bhutan</p>
+              <p>(687) 660-2473</p>
+              <p>pwillis@cross.org</p>
+            </div>
+          </div>
+
+          <div className="bill-to">
+            <h6>Bill To:</h6>
+            <table>
+              <tr>
+                <td className="title-table">Total Due: </td>
+                <td>$12,110.55</td>
+              </tr>
+              <tr>
+                <td>Bank Name: </td>
+                <td>American Bank</td>
+              </tr>
+              <tr>
+                <td>Country:	</td>
+                <td>$12,110.55</td>
+              </tr>
+              <tr>
+                <td>IBAN:	</td>
+                <td>ETD95476213874685</td>
+              </tr>
+              <tr>
+                <td>SWIFT Code:	</td>
+                <td>BR91905</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+        <hr />
         <div className="">table</div>
         <div className="invoice-form-resault">resault</div>
         <div className="invoice-form-footer">footer</div>

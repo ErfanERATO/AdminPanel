@@ -88,7 +88,52 @@
         }
       }
     }
+
+    .invoice-form-information {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 10px;
+      text-align: left;
+      padding-top: 20px;
+      .invoice-to {
+        h6 {
+          color: #c9cee2;
+          padding-left: 10px;
+        }
+        p {
+          padding-left: 10px;
+          color: #a1a3b8;
+          font-weight: 600;
+          margin-top: -10px;
+        }
+        div {
+          padding-top: 20px;
+        }
+      }
+
+      .bill-to {
+        h6 {
+          color: #c9cee2;
+          padding-left: 50px;
+        }
+        table {
+          margin-right: 20px;
+          tr {
+            color: #a1a3b8;
+            font-weight: 600;
+            td{
+              padding-left: 50px;
+            }
+          }
+        }
+      }
+    }
   }
+
+  // _____________________________________________________________
+
   .invoice-operation {
     width: 270px;
     display: flex;
