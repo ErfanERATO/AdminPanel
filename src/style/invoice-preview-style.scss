@@ -1,5 +1,4 @@
 .invoice-preview {
-  //   background-color: #2e3349;
   background-color: transparent;
   white-space: nowrap;
   display: flex;
@@ -123,12 +122,35 @@
           tr {
             color: #a1a3b8;
             font-weight: 600;
-            td{
+            td {
               padding-left: 50px;
             }
           }
         }
       }
+    }
+    .table {
+      border-bottom: 1px solid #50566e;
+      color: #c9cfdf;
+      text-align: left;
+    }
+
+    .resualt {
+      padding-right: 10px;
+      table {
+        margin-right: 20px;
+        tr {
+          color: #a1a3b8;
+          font-weight: 600;
+          td {
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+
+    .invoice-form-footer {
+      color: #a7acc0;
     }
   }
 
@@ -138,6 +160,7 @@
     width: 270px;
     display: flex;
     flex-direction: column;
+    height: max-content;
   }
 
   .invoice-operation {
