@@ -22,6 +22,72 @@
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    .invoice-form-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .address {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-left: 10px;
+        .logo-holder {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding-left: 10px;
+          .main-logo {
+            width: 45px;
+            height: 45px;
+          }
+          .company-name {
+            color: #c9cdd9;
+            font-weight: bold;
+            font-size: larger;
+            display: flex;
+            align-items: center;
+            padding-left: 7px;
+          }
+        }
+        .adress-description {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          padding-top: 35px;
+          padding-left: 10px;
+          p {
+            color: #a6a9bc;
+            margin-top: -15px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .invoice-information {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        h5 {
+          color: #c8cede;
+        }
+        div {
+          padding-top: 20px;
+          p {
+            span {
+              color: #a1a3b8;
+              font-weight: 600;
+            }
+          }
+          .due {
+            margin-top: -10px;
+          }
+        }
+      }
+    }
   }
   .invoice-operation {
     width: 270px;
@@ -31,7 +97,8 @@
 
   .invoice-operation {
     align-items: center;
-    .send,.add {
+    .send,
+    .add {
       background-color: #7367f1;
       border: none;
       border-radius: 5px;
@@ -40,7 +107,9 @@
       color: white;
       font-weight: 600;
     }
-    .download,.print,.edit {
+    .download,
+    .print,
+    .edit {
       background-color: #3c4154;
       border: none;
       border-radius: 5px;
