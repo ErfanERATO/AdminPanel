@@ -3,12 +3,11 @@
   white-space: nowrap;
   display: flex;
   flex-direction: row;
-  gap: 20px;
   justify-content: space-between;
   padding-bottom: 50px;
   .invoice-form,
   .invoice-operation {
-    padding-top: 20px;
+    padding: 20px;
     background-color: #2e3349;
     border-radius: 5px;
     margin-top: 20px;
@@ -18,7 +17,6 @@
   }
 
   .invoice-form {
-    width: 1000px;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
@@ -97,6 +95,7 @@
       padding-left: 10px;
       text-align: left;
       padding-top: 20px;
+      padding-bottom: 20px;
       .invoice-to {
         h6 {
           color: #c9cee2;
@@ -116,7 +115,7 @@
       .bill-to {
         h6 {
           color: #c9cee2;
-          padding-left: 50px;
+          padding-left: 10px;
         }
         table {
           margin-right: 20px;
@@ -124,17 +123,18 @@
             color: #a1a3b8;
             font-weight: 600;
             td {
-              padding-left: 50px;
+              padding-left: 10px;
+              padding-top: 5px;
             }
           }
         }
       }
     }
     .table {
-      // border-bottom: 1px solid #50566e;
       color: #c9cfdf;
       text-align: left;
       border: none;
+      overflow-x: auto;
     }
 
     .resualt {
@@ -145,7 +145,7 @@
           color: #a1a3b8;
           font-weight: 600;
           td {
-            padding-left: 50px;
+            padding-left: 10px;
           }
         }
       }
@@ -153,27 +153,22 @@
 
     .invoice-form-footer {
       color: #a7acc0;
+      .footer-text {
+        word-break: normal;
+      }
     }
   }
 
   // _____________________________________________________________
 
   .invoice-operation {
-    width: 270px;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-  }
-
-  .invoice-operation {
-    align-items: center;
+    padding: 25px;
     .send,
     .add {
       background-color: #7367f1;
       border: none;
       border-radius: 5px;
-      width: 220px;
-      height: 33px;
+      min-width: 100%;
       color: white;
       font-weight: 600;
     }
@@ -183,14 +178,9 @@
       background-color: #3c4154;
       border: none;
       border-radius: 5px;
-      width: 220px;
-      height: 33px;
       color: #9ea2ae;
       font-weight: 600;
-      margin-top: 10px;
-    }
-    .add {
-      margin-top: 10px;
+      min-width: 100%;
     }
   }
 }
