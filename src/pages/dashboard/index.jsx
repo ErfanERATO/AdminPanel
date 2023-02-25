@@ -2,10 +2,10 @@ import React from "react";
 import { TbShoppingCart } from "react-icons/tb";
 import { BsLink45Deg } from "react-icons/bs";
 import { MdOutlinePayment } from "react-icons/md";
-import ProgressBar from "../components/ProgressBar";
-import Object from "../assets/sidebar-pic-1.png";
+import ProgressBar from "../../components/progress";
+import Object from "../../assets/images/sidebar-pic-1.png";
 
-const WebAnalytics = () => {
+const Dashboard = () => {
   return (
     <div className="web-analytic">
       <div className="row web-analytic-main-row">
@@ -169,4 +169,4 @@ const WebAnalytics = () => {
   );
 };
 
-export default WebAnalytics;
+export default Dashboard;

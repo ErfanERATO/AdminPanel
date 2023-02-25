@@ -1,11 +1,10 @@
 import React from "react";
-import profile from "../assets/avatar-1.129659bb.png";
-import profile1 from "../assets/avatar-2.11d6be6e.png";
-import profile2 from "../assets/avatar-3.47317f35.png";
-import profile3 from "../assets/avatar-4.b0163f21.png";
+import profile from "../../assets/images/avatar-1.129659bb.png";
+import profile1 from "../../assets/images/avatar-2.11d6be6e.png";
+import profile2 from "../../assets/images/avatar-3.47317f35.png";
+import profile3 from "../../assets/images/avatar-4.b0163f21.png";
 import { AiOutlineSearch } from "react-icons/ai";
-
-import "../style/chat-style.scss";
+import "../../assets/styles/chat-style.scss";
 
 const Chat = () => {
   return (
@@ -136,9 +135,7 @@ const Chat = () => {
           </div>
         </div>
 
-        <div className="chat-content">
-
-        </div>
+        <div className="chat-content"></div>
       </div>
     </div>
   );

@@ -1,15 +1,32 @@
-import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
-import "./style/main-app-style.scss";
-import "./style/content-style.scss";
-import "./App.css";
+import "./assets/styles/main-app-style.scss";
+import "./assets/styles/content-style.scss";
 import PanelLayout from "./layouts/PanelLayout";
-
+import router from "./router";
+import { Routes, Route } from "react-router-dom";
+import { routes } from "./router/index";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <PanelLayout>
-      
-    </PanelLayout>
+    <>
+      <BrowserRouter>
+        <Routes>
+          {router.map((route, i) => {
+            return (
+              <Route
+                key={i}
+                path={route.path}
+                element={
+                  <route.layout>
+                    <route.component />{" "}
+                  </route.layout>
+                }
+              />
+            );
+          })}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

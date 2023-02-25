@@ -9,8 +9,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { VscRefresh } from "react-icons/vsc";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { ImStarEmpty } from "react-icons/im";
-import profile from "../assets/avatar-1.129659bb.png";
-import "../style/email-page-style.scss";
+import profile from "../../assets/images/avatar-1.129659bb.png";
+import "../../assets/styles/email-page-style.scss";
 
 const EmailForms = () => {
   return (

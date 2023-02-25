@@ -1,13 +1,13 @@
 import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 // import { MdShowChart } from "react-icons/md";
-import profile2 from "../assets/avatar-3.47317f35.png";
+import profile2 from "../../assets/images/avatar-3.47317f35.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiMoreVertical } from "react-icons/fi";
-import "../style/invoice-list.scss";
+import "../../assets/styles/invoice-list.scss";
 
-const InoviceList = () => {
+const InvoiceList = () => {
   return (
     <div className="invoice-page">
       {/* <div className="container table-header">
@@ -169,4 +169,4 @@ const InoviceList = () => {
   );
 };
 
-export default InoviceList;
+export default InvoiceList;

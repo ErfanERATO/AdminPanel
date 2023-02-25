@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from "../assets/mohr.png";
+import Logo from "../../assets/images/mohr.png";
 import { TbSmartHome } from "react-icons/tb";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdOutlineChat } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { AiOutlineFile } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
-import "../style/responsive/responsive.scss";
+import "../../assets/styles/responsive/responsive.scss";
 
 const SideBar = () => {
   return (
