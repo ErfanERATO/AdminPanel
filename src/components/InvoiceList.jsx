@@ -10,7 +10,7 @@ import "../style/invoice-list.scss";
 const InoviceList = () => {
   return (
     <div className="invoice-page">
-      <div className="container table-header">
+      {/* <div className="container table-header">
         <div className="operation-header">
           <div className="limit-table">
             <label>Show :</label>
@@ -38,20 +38,14 @@ const InoviceList = () => {
           <div className="search-table">
             <input placeholder="Search Invoice" />
           </div>
-
-          <div className="filter-table">
-            <div className="search-table">
-              <input placeholder="Search Invoice" />
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div className="table-invoice">
+      </div> */}
+
+      {/* <div className="table-invoice">
         <div className="table-information">
           <div className="first-section">
             <div className="id-info">#id</div>
-            {/* <MdShowChart size="25px"/> */}
             <div>CLIENT</div>
           </div>
 
@@ -109,6 +103,67 @@ const InoviceList = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="invoice-form-table table-responsive">
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">#ID</th>
+              <th scope="col" className="client">
+                CLIENT
+              </th>
+              <th scope="col">TOTAL</th>
+              <th scope="col">ISSUED DATE</th>
+              <th scope="col">BALANCE</th>
+              <th scope="col">ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" className="invoice-id" tooltip="this is tooltip">
+                #5036
+              </td>
+              <td>
+                <div className="sec-one">
+                  <div className="invoice-user">
+                    <div className="invoice-user-avatar">
+                      <div className="content-avatar">
+                        <div class="avatar-image">
+                          <img src={profile2} class="avatar" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="invoice-user-info">
+                      <div className="invoice-user-name"> Erfan Gharche</div>
+
+                      <div className="invoice-user-email">
+                        erfan.erato.79@gmail.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td className="fity">15</td>
+              <td className="one">1</td>
+              <td className="dollar">$32</td>
+              <td>
+                <div className="invoice-actions">
+                  <div>
+                    <AiOutlineMail size="25px" color="#c9cdd9" />
+                  </div>
+                  <div>
+                    <AiOutlineEye size="25px" color="#c9cdd9" />
+                  </div>
+                  <div>
+                    <FiMoreVertical size="25px" color="#c9cdd9" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

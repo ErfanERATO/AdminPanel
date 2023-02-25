@@ -33,7 +33,7 @@ const SideBar = () => {
           </div>
           <div className="email-text">Email</div>
         </div>
- 
+
         <div className="chat-button">
           <div className="chat-icon">
             <MdOutlineChat size="20px" color="#c9cdd9" />

@@ -13,16 +13,15 @@ const SearcheBar = () => {
         <div className="col-12 search-bar">
           <div className="row search-bar-row-holder justify-content-between">
             <div className="col-4">
-
               <div className="search-bar-search-row-holder">
                 <div className="icon-search">
                   <AiOutlineSearch size="25px" color="#dde2f5" />
                 </div>
                 <div className="search">
-              <div className="search-icon-holder">
-                <input className="search-text" placeholder="Search" />
-              </div>
-            </div>
+                  <div className="search-icon-holder">
+                    <input className="search-text" placeholder="Search" />
+                  </div>
+                </div>
               </div>
             </div>
 

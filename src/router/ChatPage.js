@@ -2,7 +2,7 @@ import React from "react";
 import Chat from "../components/Chat";
 
 const ChatPage = () => {
-  return (<Chat />);
+  return <Chat />;
 };
 
 export default ChatPage;

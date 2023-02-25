@@ -25,7 +25,6 @@ const PanelLayout = () => {
             <Route path="/invoicePreview" element={<InvoicePreviewPage />} />
             {/* <Route path="/items" element={<Items />} /> */}
           </Routes>
-
         </div>
       </div>
     </div>

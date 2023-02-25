@@ -1,5 +1,4 @@
 import React from "react";
-// import { FiSend } from "react-icons/fi";
 import Logo from "../assets/mohr.png";
 import "../style/invoice-preview-style.scss";
 

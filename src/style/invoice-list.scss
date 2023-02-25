@@ -47,6 +47,8 @@
     }
     .new-table {
       button {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.1);
         white-space: nowrap;
         background-color: #7367f1;
         border: none;
@@ -60,142 +62,275 @@
     }
   }
 
-  .table-invoice {
-    display: flex;
-    flex-direction: column;
-    .table-information {
-      white-space: nowrap;
-      justify-content: space-between;
-      padding-right: 40px;
-      padding-top: 35px;
-      display: flex;
-      gap: 90px;
-      .first-section {
-        display: flex;
-        gap: 60px;
-        .id-info {
-          padding-right: 50px;
-        }
-      }
-      .second-section {
-        display: flex;
-        gap: 60px;
-        .balance-info {
-          padding-left: 60px;
-        }
-      }
+  .form-operation {
+    .send{
+      width: 200px;
+      height: 38px;
     }
+  }
 
-    .table-user-invoice {
-      display: flex;
-      flex-direction: row;
-      padding-top: 35px;
-      justify-content: space-between;
-      .sec-one {
-        display: flex;
-        .invoice-id {
-          font-weight: 400;
-          color: #7367f1;
-          position: relative;
-          
+  .invoice-form-table {
+    .table {
+      margin-top: 20px;
+      thead {
+        tr {
+          .client {
+            padding-right: 350px;
+            margin-left: -90px;
+          }
+          th {
+            color: #c7ccdf;
+            font-size: 13px;
+            font-weight: 600;
+          }
         }
-
-        .invoice-id::before {
-          --translate_y: calc(-100% - 5px);
-          position: absolute;
-          content: attr(tooltip);
-          width: max-content;
-          background-color: #212121;
-          transform-origin: bottom center;
-          color: white;
-          border-radius: 5px;
-          display: flex;
-          padding-left: 5px;
-          width: max-content;
-          height: max-content;
-          font-size: 12px;
+      }
+      tbody {
+        td {
+          padding-top: 20px;
         }
+        tr {
+          .invoice-id {
+            color: #7367f1;
+            font-weight: 600;
+          }
 
-        .invoice-id::before,
-        .invoice-id::after {
-          --scale: 0;
-          left: 50%;
-          transform: translate(-50%, var(--translate_y)) scale(var(--scale));
-          transition: 0.2s transform;
-        }
+          .invoice-id::before {
+            --translate_y: calc(-100% - 5px);
+            position: absolute;
+            content: attr(tooltip);
+            width: max-content;
+            background-color: #212121;
+            transform-origin: bottom center;
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            padding-left: 5px;
+            width: max-content;
+            height: max-content;
+            font-size: 12px;
+          }
 
-        .invoice-id:hover::before,
-        .invoice-id:hover::after {
-          --scale: 1;
-        }
+          .invoice-id::before,
+          .invoice-id::after {
+            --scale: 0;
+            left: 50%;
+            transform: translate(-50%, var(--translate_y)) scale(var(--scale));
+            transition: 0.2s transform;
+          }
 
-        .invoice-user {
-          display: flex;
-          flex-direction: row;
-          .invoice-user-avatar {
-            .content-avatar {
-              padding-left: 88px;
-              margin-top: -15px;
-              .avatar-image {
+          .invoice-id:hover::before,
+          .invoice-id:hover::after {
+            --scale: 1;
+          }
+
+          .sec-one {
+            display: flex;
+            .invoice-id {
+              font-weight: 400;
+              color: #7367f1;
+              position: relative;
+            }
+
+            .invoice-user {
+              display: flex;
+              flex-direction: row;
+              .invoice-user-avatar {
+                .content-avatar {
+                  padding-left: 100px;
+                  margin-top: -15px;
+                  .avatar-image {
+                    display: flex;
+                    padding-top: 10px;
+                    .avatar {
+                      vertical-align: middle;
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 50%;
+                    }
+                  }
+                }
+              }
+              .invoice-user-info {
+                padding-left: 10px;
+                margin-top: -15px;
                 display: flex;
-                padding-top: 10px;
-                .avatar {
-                  vertical-align: middle;
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
+                flex-direction: column;
+                text-align: left;
+                .invoice-user-name {
+                  color: #d1d4e7;
+                  font-weight: 600;
+                  font-size: 20px;
+                }
+                .invoice-user-email {
+                  color: #717388;
                 }
               }
             }
           }
-          .invoice-user-info {
-            padding-left: 10px;
-            margin-top: -15px;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            .invoice-user-name {
-              color: #d1d4e7;
-              font-weight: 600;
-              font-size: 20px;
-            }
-            .invoice-user-email {
-              color: #717388;
+
+          .fity {
+            color: #c7ccdf;
+            font-weight: 500;
+          }
+          .one {
+            color: #c7ccdf;
+            font-weight: 500;
+          }
+          .dollar {
+            color: #c7ccdf;
+            font-weight: 500;
+          }
+          td {
+            .invoice-actions {
+              white-space: nowrap;
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+              margin-left: 10px;
             }
           }
         }
       }
-
-      .sec-two {
-        display: flex;
-        padding-right: 10px;
-        gap: 50px;
-        .invoice-total,
-        .invoice-date,
-        .invoice-balance {
-          color: #d1d4e7;
-          font-weight: 500;
-          font-size: 15px;
-          white-space: nowrap;
-        }
-
-        .invoice-balance {
-          padding-right: 25px;
-        }
-        .invoice-date {
-          padding-right: 90px;
-        }
-        .invoice-total {
-          padding-right: 23px;
-        }
-
-        .invoice-actions {
-          white-space: nowrap;
-          display: flex;
-          flex-direction: row;
-          gap: 10px;
-        }
-      }
     }
   }
+
+  //...................................................
+  // .table-invoice {
+  //   display: flex;
+  //   flex-direction: column;
+  //   .table-information {
+  //     white-space: nowrap;
+  //     justify-content: space-between;
+  //     padding-right: 40px;
+  //     padding-top: 35px;
+  //     display: flex;
+  //     gap: 90px;
+  //     .first-section {
+  //       display: flex;
+  //       gap: 60px;
+  //       .id-info {
+  //         padding-right: 50px;
+  //       }
+  //     }
+  //     .second-section {
+  //       display: flex;
+  //       gap: 60px;
+  //       .balance-info {
+  //         padding-left: 60px;
+  //       }
+  //     }
+  //   }
+
+  //   .table-user-invoice {
+  //     display: flex;
+  //     flex-direction: row;
+  //     padding-top: 35px;
+  //     justify-content: space-between;
+  //     .sec-one {
+  //       display: flex;
+  //       .invoice-id {
+  //         font-weight: 400;
+  //         color: #7367f1;
+  //         position: relative;
+  //       }
+
+  //       .invoice-id::before {
+  //         --translate_y: calc(-100% - 5px);
+  //         position: absolute;
+  //         content: attr(tooltip);
+  //         width: max-content;
+  //         background-color: #212121;
+  //         transform-origin: bottom center;
+  //         color: white;
+  //         border-radius: 5px;
+  //         display: flex;
+  //         padding-left: 5px;
+  //         width: max-content;
+  //         height: max-content;
+  //         font-size: 12px;
+  //       }
+
+  //       .invoice-id::before,
+  //       .invoice-id::after {
+  //         --scale: 0;
+  //         left: 50%;
+  //         transform: translate(-50%, var(--translate_y)) scale(var(--scale));
+  //         transition: 0.2s transform;
+  //       }
+
+  //       .invoice-id:hover::before,
+  //       .invoice-id:hover::after {
+  //         --scale: 1;
+  //       }
+
+  //       .invoice-user {
+  //         display: flex;
+  //         flex-direction: row;
+  //         .invoice-user-avatar {
+  //           .content-avatar {
+  //             padding-left: 88px;
+  //             margin-top: -15px;
+  //             .avatar-image {
+  //               display: flex;
+  //               padding-top: 10px;
+  //               .avatar {
+  //                 vertical-align: middle;
+  //                 width: 40px;
+  //                 height: 40px;
+  //                 border-radius: 50%;
+  //               }
+  //             }
+  //           }
+  //         }
+  //         .invoice-user-info {
+  //           padding-left: 10px;
+  //           margin-top: -15px;
+  //           display: flex;
+  //           flex-direction: column;
+  //           text-align: left;
+  //           .invoice-user-name {
+  //             color: #d1d4e7;
+  //             font-weight: 600;
+  //             font-size: 20px;
+  //           }
+  //           .invoice-user-email {
+  //             color: #717388;
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     .sec-two {
+  //       display: flex;
+  //       padding-right: 10px;
+  //       gap: 50px;
+  //       .invoice-total,
+  //       .invoice-date,
+  //       .invoice-balance {
+  //         color: #d1d4e7;
+  //         font-weight: 500;
+  //         font-size: 15px;
+  //         white-space: nowrap;
+  //       }
+
+  //       .invoice-balance {
+  //         padding-right: 25px;
+  //       }
+  //       .invoice-date {
+  //         padding-right: 90px;
+  //       }
+  //       .invoice-total {
+  //         padding-right: 23px;
+  //       }
+
+  //       .invoice-actions {
+  //         white-space: nowrap;
+  //         display: flex;
+  //         flex-direction: row;
+  //         gap: 10px;
+  //       }
+  //     }
+  //   }
+  // }
 }
