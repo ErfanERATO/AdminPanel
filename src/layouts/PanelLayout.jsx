@@ -1,6 +1,5 @@
 import React, { Children } from "react";
 import SearcheBar from "../components/searchbar";
-import { Route, Routes } from "react-router-dom";
 import SideBar from "../components/sidebar";
 import "../assets/styles/responsive/responsive.scss";
 // import Items from "../pages/Items";

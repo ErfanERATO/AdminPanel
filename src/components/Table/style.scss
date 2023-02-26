@@ -1,0 +1,103 @@
+.invoice-table {
+  .table {
+    border: none;
+    thead {
+      border: none;
+      tr {
+        border: none;
+        th {
+          //   border: none;
+          border-bottom: 1px solid #42475d;
+          color: #c8cede;
+          padding-top: 30px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          border-bottom: 1px solid #42475d;
+          color: #7367ef;
+          padding-right: 30px;
+          font-weight: 600;
+          padding-top: 20px;
+          position: relative;
+        }
+
+        th::before {
+          --translate_y: calc(-100% - 5px);
+          position: absolute;
+          content: attr(tooltip);
+          width: max-content;
+          background-color: #212121;
+          transform-origin: bottom center;
+          color: white;
+          border-radius: 5px;
+          display: flex;
+          width: max-content;
+          height: max-content;
+          font-size: 12px;
+        }
+
+        th::before,
+        th::after {
+          --scale: 0;
+          left: 50%;
+          transform: translate(-100%, var(--translate_y)) scale(var(--scale));
+          transition: 0.2s transform;
+        }
+
+        th:hover::before,
+        th:hover::after {
+          --scale: 1;
+        }
+
+        td {
+          border-bottom: 1px solid #42475d;
+          padding-top: 20px;
+          color: #c8cede;
+          font-weight: 600;
+          .invoice-user {
+            display: flex;
+            flex-direction: row;
+            .invoice-user-avatar {
+              .content-avatar {
+                .avatar-image {
+                  display: flex;
+                  .avatar {
+                    vertical-align: middle;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                  }
+                }
+              }
+            }
+            .invoice-user-info {
+              padding-left: 10px;
+              margin-top: -6px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+              .invoice-user-name {
+                color: #d1d4e7;
+                font-weight: 600;
+                font-size: 20px;
+              }
+              .invoice-user-email {
+                color: #717388;
+              }
+            }
+          }
+
+          .invoice-actions {
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
