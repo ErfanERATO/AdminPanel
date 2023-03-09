@@ -1,0 +1,56 @@
+.invoice-page {
+  background-color: #2e3349;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 20px;
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    .operation-header {
+      display: flex;
+      gap: 10px;
+      button {
+        display: flex;
+        height: 38px;
+        width: 180px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 17px;
+        background-color: #7367ef;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .show-select {
+        background-color: transparent;
+        border: 1px solid #5c6177;
+        color: #5c6177;
+      }
+    }
+    .filter-header {
+      display: flex;
+      padding-left: 10px;
+      .search-invoice {
+        white-space: nowrap;
+        display: flex;
+        background-color: transparent;
+        border: 1px solid #5c6177;
+        color: #5c6177;
+      }
+
+      .status-select {
+        white-space: nowrap;
+        display: flex;
+        background-color: transparent;
+        border: 1px solid #5c6177;
+        color: #5c6177;
+      }
+    }
+  }
+}

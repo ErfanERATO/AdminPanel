@@ -1,12 +1,17 @@
+import { ConfigProvider } from "antd";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import theme from "./utils/theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <ConfigProvider theme={{token : theme}}>
     <App />
+
+    </ConfigProvider>
   </React.StrictMode>
 );
 

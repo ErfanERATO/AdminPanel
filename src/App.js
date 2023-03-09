@@ -16,7 +16,7 @@ function App() {
                 path={route.path}
                 element={
                   <route.layout>
-                    <route.component />{" "}
+                    <route.component />
                   </route.layout>
                 }
               />

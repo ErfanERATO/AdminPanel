@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/mohr.png";
-import "../../assets/styles/invoice-preview-style.scss";
+import "../invoice/invoice-preview-style.scss";
 
 const InvoicePreview = () => {
   return (

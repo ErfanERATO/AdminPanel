@@ -4,7 +4,7 @@ import profile1 from "../../assets/images/avatar-2.11d6be6e.png";
 import profile2 from "../../assets/images/avatar-3.47317f35.png";
 import profile3 from "../../assets/images/avatar-4.b0163f21.png";
 import { AiOutlineSearch } from "react-icons/ai";
-import "../../assets/styles/chat-style.scss";
+import "../chat/chat-style.scss";
 
 const Chat = () => {
   return (

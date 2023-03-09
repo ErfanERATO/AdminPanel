@@ -1,0 +1,113 @@
+html {
+  font-size: 70% !important;
+  line-height: 1.15 !important;
+}
+.ant-menu-item-selected {
+  background-color: #5f57be !important;
+  color: #f7f7ff !important;
+}
+:where(.css-dev-only-do-not-override-141rmge).ant-menu-light:not(
+    .ant-menu-horizontal
+  )
+  .ant-menu-item:not(.ant-menu-item-selected):hover {
+  color: #fff !important;
+}
+.ant-menu-item {
+  &:active {
+    background-color: transparent !important;
+  }
+  border-radius: 0.475rem !important;
+  //   padding-right: 0 !important;
+  .ant-menu-title-content {
+    margin-right: 0.5rem !important;
+  }
+}
+.ant-form-item-label {
+  color: #3f4254 !important;
+}
+.ant-form-item-control-input-content {
+  .ant-input {
+    border: none;
+    padding: 0.775rem 1rem;
+    font-size: 1.1rem !important;
+    border-radius: 0.475rem;
+  }
+}
+.ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+.ant-layout {
+  .site-layout {
+    background-color: #24293c !important;
+  }
+}
+
+// ----------------side bar-----------------
+.layout {
+  justify-content: center;
+  text-align: center;
+
+  .sider {
+    .logo-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-top: 15px;
+      padding-left: 10px;
+      .main-logo {
+        width: 40px;
+        height: 40px;
+      }
+      .company-name {
+        color: #c9cdd9;
+        font-weight: bold;
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        padding-left: 7px;
+      }
+    }
+  }
+}
+
+// ----------------search bar-----------------
+
+.ant-btn {
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+  .anticon-search {
+    padding-bottom: 25px;
+    font-size: 20px;
+    color: #dce1f4;
+  }
+}
+.ant-input {
+  width: 100px;
+  color: #dce1f4;
+  margin-left: -10px;
+  font-weight: 500;
+}
+.ant-badge {
+  .ant-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+  .ant-badge-dot {
+    transform: none;
+  }
+}
+.header {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 80;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 94%;
+  margin-left: 40px;
+}
+.serach-bar-icons {
+  flex-wrap: nowrap;
+}
