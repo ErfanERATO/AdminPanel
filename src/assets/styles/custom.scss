@@ -43,6 +43,10 @@ html {
   }
 }
 
+.ant-layout-content{
+  margin: 2px 16px !important;
+}
+
 // ----------------side bar-----------------
 .layout {
   justify-content: center;
@@ -111,3 +115,12 @@ html {
 .serach-bar-icons {
   flex-wrap: nowrap;
 }
+
+// ----------------email form-----------------
+
+body{
+  #content-email{
+    margin: 0!important;
+  }
+}
+

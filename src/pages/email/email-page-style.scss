@@ -1,6 +1,5 @@
 .background-email-form {
   background-color: transparent;
-  padding-top: 20px;
   height: fit-content;
   .main-email-form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -8,5 +7,68 @@
     display: flex;
     flex-direction: column;
     height: max-content;
+  }
+
+  .compose-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 17px;
+    margin-left: -7px;
+    .main-compose-button {
+      background-color: #7367ef;
+      color: #fafdff;
+      border: none;
+      border-radius: 5px;
+      width: 150px;
+      height: 35px;
+    }
+  }
+
+  .personal-icon {
+    .label-personal {
+      margin-left: 7px;
+      margin-right: 7px;
+      height: 10px;
+      width: 10px;
+      background-color: #2cca7d;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  .company-icon {
+    .label-company {
+      margin-left: 7px;
+      margin-right: 7px;
+      height: 10px;
+      width: 10px;
+      background-color: #6a5be8;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  .important-icon {
+    .label-important {
+      margin-left: 7px;
+      margin-right: 7px;
+      height: 10px;
+      width: 10px;
+      background-color: #fd9c4d;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  .private-icon {
+    .label-private {
+      margin-left: 7px;
+      margin-right: 7px;
+      height: 10px;
+      width: 10px;
+      background-color: #ee465d;
+      border-radius: 50%;
+      display: inline-block;
+    }
   }
 }

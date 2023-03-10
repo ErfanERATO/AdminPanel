@@ -1,6 +1,6 @@
 import React from "react";
 import Object from "../../assets/images/sidebar-pic-1.png";
-import "../slider-card/style.scss";
+import "../../components/slider-card/style.scss";
 
 const SliderCard = () => {
   return (

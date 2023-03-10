@@ -59,7 +59,7 @@ const PanelLayout = ({ children }) => {
           items={[
             {
               key: "/",
-              icon: <TbSmartHome size="20px" />,
+              icon: <TbSmartHome size="20px" color="#c9cdd9"/>,
               label: <Link to={"/"}>Dashboards</Link>,
             },
             {
